@@ -1,0 +1,30 @@
+<html lang="en">
+<header>
+  <h1>My Inventory application</h1>
+</header>
+
+<div id="main">
+    <div class="section first">
+        <h2>Categories</h2>
+        {{render "categories"}}
+    </div>
+
+    <div class="section">
+        {{render "categories/tools"}}
+    </div>
+
+    <div class="section">
+        <h2>Item Details</h2>
+        {{render "categories/tools/tool"}}
+    </div>
+
+    <div class="section last">
+        <h2>Edit tags, etc and/or new items, maybe?</h2>
+        <ul>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkID=615537">Get help</a></li>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkID=615538">Get more templates</a></li>
+        </ul>
+    </div>
+</div>
+
+</html>

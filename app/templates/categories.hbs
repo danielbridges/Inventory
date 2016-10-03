@@ -1,0 +1,7 @@
+<ul>
+{{#each model as |category|}}
+    <li>
+      {{#link-to (concat "categories." category.id) 'tools' }}{{category.description}}{{/link-to}}
+    </li>
+  {{/each}}
+</ul>

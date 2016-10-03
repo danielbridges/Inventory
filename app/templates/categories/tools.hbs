@@ -1,0 +1,8 @@
+<h2>{{model.description}}</h2>
+<ul>
+{{#each model as |tool|}}
+    <li>
+      {{#link-to "categories.tools.tool" tool}}{{tool.description}}{{/link-to}}
+    </li>
+  {{/each}}
+</ul>
